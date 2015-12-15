@@ -9,5 +9,6 @@ namespace Empare.Contracts
     interface IUnit
     {
          int Health { get; set; }
+         int Damage { get; }
     }
 }
