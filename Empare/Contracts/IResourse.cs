@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Empare.Contracts
 {
-    interface IResourse
+    interface IResource
     {
          string Type { get; set; }
          int Quantity { get; set; }

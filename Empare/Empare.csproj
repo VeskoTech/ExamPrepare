@@ -46,6 +46,12 @@
     <Compile Include="Contracts\IBuilding.cs" />
     <Compile Include="Contracts\IResourse.cs" />
     <Compile Include="Contracts\IUnit.cs" />
+    <Compile Include="Models\Barracks.cs" />
+    <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\Gold.cs" />
+    <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\Turns.cs" />
+    <Compile Include="Models\Unit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

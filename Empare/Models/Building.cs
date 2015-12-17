@@ -7,10 +7,19 @@ using System.Threading.Tasks;
 
 namespace Empare.Models
 {
-    public class Building : IBuilding
+    public abstract class Building : IBuilding
     {
-        public string BuildingType { get; set; }
-       
+        private int currTurn = Turns.TurnsCount;
+        public string ResourceType { get; set; }
+        public Resource Resource { get; set; }
+        public Unit Unit { get; set; }
+
+        public Building(string resouceType)
+        {
+            this.ResourceType = resouceType;
+           
+        }
+
         public void ProduceResourse()
         {
             throw new NotImplementedException();
@@ -19,6 +28,11 @@ namespace Empare.Models
         public void ProduceUnit()
         {
             throw new NotImplementedException();
+        }
+
+        public void Update()
+        {
+
         }
     }
 }

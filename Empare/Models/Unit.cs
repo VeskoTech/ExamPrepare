@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Empare.Models
 {
-    class Unit : IUnit
+    public class Unit : IUnit
     {
         int IUnit.Damage { get; }
         int IUnit.Health { get; set; }
